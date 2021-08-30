@@ -1,0 +1,17 @@
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: testing
+  namespace: deploy
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  persistentVolumeReclaimPolicy: Delete
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/pankhurichauhan21/pvc-file"

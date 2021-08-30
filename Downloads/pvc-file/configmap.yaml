@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: core
+  namespace: deploy
+data:
+  name: "Configfile"
+  xml-core.xml: |
+    beginner
+    efficient
+    proficiency
+  Description: "This is env testing"
